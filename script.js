@@ -2,7 +2,7 @@
 var img = window.document.createElement('img');
 var project = window.location.pathname.split('/').splice(0,3).join('/')
 
-img.setAttribute('src', 'http://travis-ci.org' + project + '.png');
+img.setAttribute('src', 'https://secure.travis-ci.org' + project + '.png');
 img.setAttribute('alt', 'build status');
 
 img.style.display = 'inline-block';
