@@ -1,10 +1,17 @@
 {
-  "version": "3",
+  "version": "4",
   "name": "github+travis",
   "description": "Display build status next to the project name on github.",
-  "icons": { "48": "icon.png" },
+
+  "icons": {
+    "16":  "icon-16.png",
+    "48":  "icon-48.png",
+    "128": "icon-128.png"
+  },
 
   "content_scripts": [ {
-    "js": [ "script.js" ], "matches": [ "https://github.com/*" ], "run_at": "document_idle"
+    "js":      [ "script.js" ],
+    "matches": [ "https://github.com/*" ],
+    "run_at":  "document_idle"
   } ]
 }
