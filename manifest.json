@@ -1,5 +1,5 @@
 {
-  "version": "4",
+  "version": "5",
   "name": "github+travis",
   "description": "Display build status next to the project name on github.",
 
