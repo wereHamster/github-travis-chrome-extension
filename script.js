@@ -38,6 +38,6 @@ function insertStatusIcon(el) {
 
         /* And finally insert the elements into the DOM. */
         link.appendChild(img);
-        el.appendChild(link);
+        el.parentNode.insertBefore(link, el.nextSibling);
     }
 }
