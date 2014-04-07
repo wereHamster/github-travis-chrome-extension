@@ -1,4 +1,3 @@
-
 /* We first check whether the required elements exist on the webpage. If they
  * do not, it means that either the user is looking at something other than
  * a project page, or that github changed their layout and we need to adapt
@@ -17,8 +16,8 @@ function insertStatusIcon(el) {
 
 
     var img = window.document.createElement('img');
-    img.src = 'https://secure.travis-ci.org' + project + '.png';
-    img.alt = 'build status'
+    img.src = 'https://travis-ci.org' + project + '.svg';
+    img.alt = 'build status';
 
 
     /* When the image is loaded, we insert it into the DOM. This event is only
@@ -39,5 +38,5 @@ function insertStatusIcon(el) {
         /* And finally insert the elements into the DOM. */
         link.appendChild(img);
         el.parentNode.insertBefore(link, el.nextSibling);
-    }
+    };
 }
