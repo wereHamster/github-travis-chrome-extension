@@ -44,7 +44,7 @@ function insertStatusIcon(el) {
     img.onload = function() {
         /* Create the link element. */
         var link = window.document.createElement('a');
-        link.href = 'http://api.travis-ci.org' + project;
+        link.href = 'https://travis-ci.org' + project;
         link.className = 'travis-ci';
 
         /* And finally insert the elements into the DOM. */
